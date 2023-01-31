@@ -39,9 +39,6 @@ public class T_Evraka {
 
         String stockText = "Stock: " + driver.findElement(By.xpath("//div[@id='availabilityInsideBuyBox_feature_div']//span")).getText();
 
-        Select select = new Select(driver.findElement(By.xpath("//select[@name='quantity']")));
-        String quantity = select.getFirstSelectedOption().getText();
-
         String price = "price:" + driver.findElement(By.xpath("//div[@id='corePriceDisplay_desktop_feature_div']/div//span[@class='a-price-whole']")).getText();
         String price2 = "," + driver.findElement(By.xpath("//div[@id='corePriceDisplay_desktop_feature_div']/div//span[@class='a-price-whole']/following-sibling::span")).getText();
         String price3 = driver.findElement(By.xpath("//div[@id='corePriceDisplay_desktop_feature_div']/div//span[@class='a-price-whole']/following-sibling::span[2]")).getText();
