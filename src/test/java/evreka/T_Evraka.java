@@ -45,7 +45,7 @@ public class T_Evraka {
 
 
         System.out.println(brand.substring(0, 10) + "   " + size + "\n" + color + "  " + price + price2 + price3 + "\n" + stockText);
-
+//Added  target to .gitignore
 
     }
 
